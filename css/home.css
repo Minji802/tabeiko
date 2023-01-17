@@ -1,0 +1,90 @@
+/*Home Main*/
+#indexHome {
+  position: relative;
+}
+
+/*検索機能*/
+.searchBackground {
+  text-align: center;
+  width: 100vw;
+  height: auto;
+}
+
+/*PC画面*/
+.searchBox {
+  width: 30%;
+  height: auto;
+  position: sticky;
+  top: 0px;
+  background-color: #fff5f4;
+  display: inline-block;
+  border-radius: 10px;
+  border: solid 5px #ff5c5d;
+  z-index: 1;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1250px) {
+  .searchBox {
+    width: 40%;
+  }
+}
+
+/* タブレットの横幅、縦幅 ( 768px ~ 1023px)*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .searchBox {
+    width: 50%;
+  }
+}
+
+/* searchBox- モバイルの横幅、縦幅 (解像度 767px 以内)*/
+@media screen and (max-width: 768px) {
+  .searchBox {
+    width: 60%;
+  }
+}
+
+.search-button {
+  width: 100px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #ff5c5d;
+  border: 3px solid #ff5c5d;
+  color: #fff5f4;
+  font-size: 13pt;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*slider*/
+.slider-div {
+  align-content: center;
+  width: 100%;
+}
+
+.bx-wrapper img {
+  max-width: 100%;
+  opacity: 0.7;
+  margin: 0 auto;
+}
+
+/*一番近いレストラン五つ紹介*/
+marquee {
+  margin-top: 100px;
+}
+
+.shop-info {
+  flex-basis: 200px;
+  margin: 20px;
+}
+
+.shop-img img {
+  border-radius: 10px;
+}
+
+.shop-title {
+  margin-top: 15px;
+  font-size: 14pt;
+  font-weight: 600;
+}

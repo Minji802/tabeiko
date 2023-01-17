@@ -1,0 +1,101 @@
+/*Header And Footer*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 300px;
+}
+
+@media screen and (max-width: 300px) {
+  header img {
+    width: 200px;
+  }
+}
+
+/*main*/
+main {
+  height: auto;
+}
+
+/*footer*/
+footer {
+  margin-top: 100px;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(221, 221, 221);
+}
+
+.footer-left {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 18pt;
+  font-weight: 600;
+  flex: 1;
+}
+
+.footer-middle {
+  margin: 0px 5%;
+  margin-top: 60px;
+}
+
+.footer-middle strong {
+  font-size: 13pt;
+}
+
+.footer-middle li {
+  font-size: 10pt;
+  margin-left: 20px;
+}
+
+.footer-right {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  text-align: right;
+  flex: 1;
+}
+
+/* footer - タブレットの横幅、縦幅 (解像度 768px ~ 1023px)*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-right {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    text-align: right;
+    flex: 1;
+  }
+}
+
+/* footer - モバイルの横幅、縦幅 (解像度 767px以内)*/
+@media screen and (max-width: 767px) {
+  .footer-middle {
+    margin: 0px 5%;
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+
+  .footer-right {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+    text-align: right;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer-right {
+    font-size: 9pt;
+  }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>検索結果</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/logo/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/list-page.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"
+    />
+    <link rel="stylesheet" href="css/detail-page.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+  </head>
+  <body>
+    <!-- HEADER 領域 -->
+    <header></header>
+
+    <!-- Main 領域  -->
+    <main>
+      <!--再検索-->
+      <div class="searchBackground">
+        <div class="searchBox2">
+          <strong>あなたの</strong>
+          <select id="range2">
+            <option value="1" selected>300</option>
+            <option value="2">500</option>
+            <option value="3">1000</option>
+            <option value="4">2000</option>
+            <option value="5">3000</option>
+          </select>
+          <strong>ｍ 以内の飲食店</strong>
+          <input type="button" class="search-button" value="確認" />
+        </div>
+        <div class="search-list-shop">
+          <!--詳細条件-->
+          <div class="add-detailed-search">
+            <div>
+              <label>
+                <input type="checkbox" id="card_check" />
+                カード決済
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" id="child_check" />
+                子供連れ
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" id="pet_check" />
+                ペット連れ
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" id="parking_check" />
+                駐車可能
+              </label>
+            </div>
+            <div class="add-detailed-search-button">
+              <button onclick='filterSearch();''>
+               詳細検索
+              </button>
+            </div>
+          </div>
+          <!--検索結果-->
+          <div id="search-list"></div>
+        </div>
+        <!--paging-->
+        <div id="pagination"></div>
+      </div>
+      <!--shop detail-->
+      <div id="detail-shop">
+      </div>
+     
+    </main>
+
+    <!-- Footer 領域 -->
+    <footer></footer>
+  </body>
+
+  <!--shop list Page-->
+  <script src="js/shop-list.js"></script>
+  <script src="js/geolocation.js"></script>
+  <script src="js/pagination.js"></script>
+  <script src="js/list-page.js"></script>
+
+  <!--shop detail Page-->
+  <script src="js/shop-detail.js"></script>
+  <script src="js/review-page.js"></script>
+</html>

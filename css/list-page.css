@@ -1,0 +1,322 @@
+/*再検索*/
+.searchBox2 {
+  width: 100vw;
+  height: auto;
+  top: 0px;
+  position: sticky;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.search-button {
+  width: 100px;
+  height: 32px;
+  background-color: #ff6e6e;
+  border: 3px solid #ff6e6e;
+  color: #fff5f4;
+  font-size: 13pt;
+  font-weight: 600;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.search-list-shop {
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*詳細条件*/
+.add-detailed-search {
+  width: 140px;
+  height: 226px;
+  margin-top: 25px;
+  margin-left: 150px;
+  border: 5px solid #ff5c5d;
+  background-color: #fff5f4;
+}
+
+.add-detailed-search div {
+  margin-top: 13px;
+}
+
+.add-detailed-search label {
+  margin-left: 13px;
+}
+
+.add-detailed-search-button {
+  text-align: center;
+}
+
+.add-detailed-search-button button {
+  margin-top: 20px;
+  width: 100px;
+  height: 32px;
+  background-color: #ff6e6e;
+  border: 3px solid #ff6e6e;
+  color: #fff5f4;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media screen and (min-width: 461px) {
+  /*検索結果*/
+  #search-list {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  /*検索結果*/
+  #search-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#loading {
+  font-size: 21pt;
+}
+
+#total {
+  font-size: 15pt;
+}
+
+.search-result-page {
+  position: relative;
+  margin-top: 25px;
+  font-size: 13pt;
+  width: 70%;
+  min-width: 653px;
+}
+
+/*検索結果 - tab menu*/
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.tabs li {
+  display: inline-block;
+  background: #ff5c5d;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 28%;
+  text-align: center;
+  font-size: 17pt;
+}
+
+ul.tabs li.current {
+  background: #fff5f4;
+  color: #ff5c5d;
+}
+
+.tab-content {
+  display: none;
+  border-left: solid 5px #ff5c5d;
+  border-right: solid 5px #ff5c5d;
+  border-top: solid 3px #ff5c5d;
+  border-bottom: solid 3px #ff5c5d;
+}
+
+.tab-content:hover {
+  cursor: pointer;
+  background-color: #fff5f4;
+  transition: all 0.3s ease-out;
+  border-bottom: 5px dotted #ff5c5d;
+  border-top: 5px dotted #ff5c5d;
+}
+
+.tab-content.current {
+  display: inherit;
+}
+
+.tab-2 {
+  height: 300px;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.tab-2 div {
+  margin-top: 80px;
+}
+
+.tab-3 {
+  height: 300px;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.tab-3 div {
+  margin-top: 80px;
+}
+/*検索結果 - tab menu終わり*/
+
+/*検索結果*/
+.shop-list {
+  display: flex;
+  height: 320px;
+  margin-top: 20px;
+}
+
+.textBox {
+  width: 80%;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.bookmark {
+  text-align: right;
+  float: right;
+  margin-right: 20px;
+}
+
+.bookmark button {
+  height: 57px;
+  width: 41px;
+  font-size: 25pt;
+  background-color: #fff9c0;
+  border: 4px solid #ff5c5d;
+  color: rgb(180, 180, 180);
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.shop-img {
+  width: 20%;
+  margin-left: 20px;
+}
+
+.shop-img img {
+  margin-top: 35px;
+  max-width: 100%;
+}
+
+.shop-title {
+  font-size: 20pt;
+  font-weight: 600;
+}
+
+.shop-intro {
+  font-size: 13pt;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.shop-access {
+  font-size: 13pt;
+  margin-top: 5pt;
+}
+
+.list-shop-table {
+  width: 100%;
+}
+
+.list-shop-table-title {
+  width: 20%;
+}
+
+.shop-starPoint {
+  display: inline-block;
+  color: #ff5c5d;
+}
+
+.shop-reviewCount {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/*paging*/
+#pagination {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* タブレットの横幅、縦幅 (解像度 817px ~ 1023px)*/
+@media screen and (min-width: 817px) and (max-width: 1023px) {
+  /*詳細条件*/
+  .add-detailed-search {
+    width: 120px;
+    height: 226px;
+    margin-top: 25px;
+    margin-left: 10px;
+    border: 5px solid #ff5c5d;
+    background-color: #fff5f4;
+    font-size: 10pt;
+  }
+}
+
+/* searchBox- モバイルの横幅、縦幅 (解像度 767px 以内)*/
+@media screen and (max-width: 816px) {
+  /*再検索*/
+  .search-list-shop {
+    margin: 10px auto;
+  }
+
+  /*詳細条件*/
+  .add-detailed-search {
+    width: 140px;
+    height: 226px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #ff5c5d;
+    background-color: #fff5f4;
+  }
+
+  /*検索結果*/
+  ul.tabs li {
+    width: auto;
+    display: inline-block;
+    background: #ff5c5d;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12pt;
+  }
+
+  .search-result-page {
+    position: relative;
+    margin-top: 25px;
+    font-size: 13pt;
+    width: 80%;
+    min-width: 200px;
+  }
+
+  .shop-list {
+    display: block;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  .shop-img {
+    width: 80%;
+    margin-left: 50px;
+    margin-top: -50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .shop-img {
+    width: 80%;
+    margin-left: 0px;
+    margin-top: -50px;
+  }
+
+  .shop-img img {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>タベイコ</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/logo/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/detail-page.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/geolocation.js"></script>
+    <script type="text/javascript" src="js/shop-list.js"></script>
+    <script type="text/javascript" src="js/shop-detail.js"></script>
+  </head>
+  <body>
+    <!-- HEADER 領域 -->
+    <header></header>
+
+    <!-- Main 領域  -->
+    <main>
+      <div id="indexHome">
+        <div class="searchBackground">
+          <div class="searchBox">
+            <strong>あなたの</strong>
+            <select id="range2">
+              <option value="1" selected="selected">300</option>
+              <option value="2">500</option>
+              <option value="3">1000</option>
+              <option value="4">2000</option>
+              <option value="5">3000</option>
+            </select>
+            <strong>m 以内の飲食店！</strong>
+            <input type="button" class="search-button" value="確認" />
+          </div>
+
+          <!--bxslider-->
+          <div class="slider-div">
+            <ul class="bxslider">
+              <li><img src="images/bxSlider/Tokyo_Japan.jpg" /></li>
+              <li><img src="images/bxSlider/Kyoto,_Japan.jpg" /></li>
+              <li><img src="images/bxSlider/Hukuoka_Japan.jpg" /></li>
+            </ul>
+          </div>
+
+          <!-- 一番近いレストラン五つ紹介 -->
+          <marquee>
+            <h2 style="margin-bottom: 50px">
+              現在、あなたの現在地から近い飲食店、ご紹介!
+            </h2>
+          </marquee>
+          <div id="search-list"></div>
+          <div id="pagination" style="display: none"></div>
+        </div>
+        <div id="detail-shop"></div>
+      </div>
+    </main>
+
+    <!-- Footer 領域 -->
+    <footer></footer>
+  </body>
+</html>

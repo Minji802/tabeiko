@@ -1,0 +1,248 @@
+/*PC画面(解像度 1024px 以上)*/
+@media screen and (min-width: 1024px) {
+  #detail-page {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+  }
+}
+
+/* タブレットの横幅、縦幅 (解像度 768px ~ 1023px)*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #detail-page {
+    margin-top: 50px;
+  }
+}
+
+/* モバイルの横幅、縦幅 (解像度 767px以内)*/
+@media screen and (max-width: 767px) {
+  /*shop-detail*/
+  #detail-shop {
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 60px;
+  }
+}
+
+/*shop-detail*/
+#detail-shop {
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.detail-close-btn {
+  color: white;
+  font-size: 25pt;
+  font-weight: 600;
+  width: 40px;
+  height: 50px;
+  background-color: black;
+  float: right;
+  margin-top: -50px;
+  cursor: pointer;
+}
+
+.detail-shop-img {
+  width: 20%;
+  float: right;
+  margin-top: 15px;
+  border: 10px solid #ff5858;
+  border-style: dashed solid;
+}
+
+@media screen and (max-width: 415px) {
+  .detail-shop-img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+.detail-shop-img img {
+  width: 95%;
+  margin: 5px;
+}
+
+.detail-title {
+  border-bottom: 1px solid gray;
+}
+
+.detail-shop-name {
+  text-align: center;
+  font-size: 25pt;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.detail-info div {
+  margin-bottom: 5px;
+}
+
+.detail-shop-table tr {
+  height: 28px;
+}
+
+.detail-shop-table-title {
+  width: 100px;
+}
+
+.detail-shop-catch {
+  font-size: 13pt;
+  color: #ff5858;
+}
+
+.detail-shop-adress {
+  margin-top: 20px;
+}
+
+.detail-shop-tel {
+  margin-top: 15px;
+}
+
+/*star*/
+.star {
+  position: relative;
+  font-size: 1.5rem;
+  color: #ff5858;
+}
+
+.star-point-average {
+  display: inline;
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+.star-point button {
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #fff5f4;
+  border: solid 3px #ff5858;
+  color: #ff5858;
+  border-radius: 12px;
+}
+
+.star-point button:hover {
+  background-color: #ff5858;
+  border: solid 3px #ff5858;
+  color: #fff5f4;
+  cursor: pointer;
+}
+
+/*Menu And Map - PC画面、タブレット画面(解像度 768px 以上)*/
+@media screen and (min-width: 768px) {
+  .menu-and-map {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /*Menu*/
+  #detail-menu {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+  }
+
+  .detail-menu-title {
+    font-size: 18pt;
+    font-weight: 550;
+  }
+
+  .detail-menu-list {
+    border: solid 1px gray;
+    height: 300px;
+    display: flex;
+  }
+
+  .detail-menu-list div {
+    margin: auto;
+  }
+
+  /*map*/
+  .shop-map {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1;
+  }
+
+  .shop-map-title {
+    font-size: 18pt;
+    font-weight: 550;
+  }
+
+  #map {
+    height: 300px;
+  }
+}
+
+/* Menu And Map - モバイルの横幅、縦幅 (解像度 767px 以内)*/
+@media screen and (max-width: 767px) {
+  .menu-and-map {
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  /*Menu*/
+  #detail-menu {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .detail-menu-title {
+    font-size: 18pt;
+    font-weight: 550;
+  }
+
+  .detail-menu-list {
+    border: solid 1px gray;
+    height: 300px;
+    display: flex;
+  }
+
+  .detail-menu-list div {
+    margin: auto;
+  }
+
+  /*map*/
+  .shop-map {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .shop-map-title {
+    font-size: 18pt;
+    font-weight: 550;
+  }
+
+  #map {
+    height: 300px;
+  }
+}
+
+/*review*/
+#detail-review {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.detail-review-title {
+  font-size: 18pt;
+  font-weight: 550;
+}
+
+.detail-review-list {
+  border: solid 1px gray;
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+.detail-review-list div {
+  margin: auto;
+}
