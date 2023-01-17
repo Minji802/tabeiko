@@ -13,8 +13,8 @@ function getUserLocation() {
       lat = pos.coords.latitude;
       lng = pos.coords.longitude;
 
-      // latlng = { lat: lat, lng: lng }; // real one
-      latlng = { lat: 35.68093, lng: 139.766863 }; // set Tokyo for testing
+      latlng = { lat: lat, lng: lng }; // real one
+      // latlng = { lat: 35.68093, lng: 139.766863 }; // set Tokyo for testing
 
       setMainShops(latlng);
     });
